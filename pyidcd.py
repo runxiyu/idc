@@ -2,9 +2,9 @@
 #
 # Internet Delay Chat server written in Python Trio.
 #
-# Written by: Andrew <https://www.andrewyu.org/>
-#             luk3yx <https://luk3yx.github.io/>
-#             Sus_User <https://users.andrewyu.org/~hax/>
+# Written by: Runxi Yu <https://runxiyu.org>
+#             Luke <https://luk3yx.github.io>
+#             Test_User <hax@andrewyu.org>
 #
 # This is free and unencumbered software released into the public
 # domain.
@@ -58,8 +58,8 @@ PORT = 6835
 
 ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
 ctx.load_cert_chain(
-    "/etc/letsencrypt/live/fcm.andrewyu.org/fullchain.pem",
-    "/etc/letsencrypt/live/fcm.andrewyu.org/privkey.pem",
+    "/tmp/f.pem",
+    "/tmp/k.pem",
 )
 
 client_id_counter = -1
